@@ -51,6 +51,8 @@ div .row{
   }
   #sm_about{
     display: block;
+    margin-left:5px;
+    margin-right: 5px; 
   }
 }
 
