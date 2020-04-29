@@ -1,6 +1,8 @@
 header{
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: larger;
+  padding-top: 5px;
 }
 
 header div{
@@ -44,18 +46,6 @@ div .row{
   width: 438px;
 }
 
-
-@media screen and (max-width:1060px){
-  #lg_about{
-    display: none;
-  }
-  #sm_about{
-    display: block;
-    margin-left:5px;
-    margin-right: 5px; 
-  }
-}
-
 @media screen and (min-width:1061px){
   #lg_about{
     display: inline-flexbox;
@@ -65,3 +55,18 @@ div .row{
   }
 }
 
+/*small view v v v */
+@media screen and (max-width:1060px){
+  #lg_about{
+    display: none;
+  }
+  #sm_about{
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #name{
+    font-size: xxx-large;
+  }
+}

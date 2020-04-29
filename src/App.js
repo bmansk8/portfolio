@@ -3,14 +3,17 @@ import './App.css';
 import Photo from './imgs/guitarPhoto.jpeg'
 import pluralsightLogo from './imgs/psLogo.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope,
+import {
+  faEnvelope,
   faPhone,
-  faMapMarkerAlt
-} from'@fortawesome/free-solid-svg-icons'
-import { faLinkedin,
+  faMapMarkerAlt,
+} from '@fortawesome/free-solid-svg-icons'
+import {
+  faLinkedin,
   faGithub,
   faCodepen,
-  faFreeCodeCamp
+  faFreeCodeCamp,
+  faReact
 } from '@fortawesome/free-brands-svg-icons'
 
 
@@ -21,8 +24,8 @@ function App() {
         <a href='https://www.linkedin.com/in/barron-brock-482059174/' target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a>
         <a href='https://github.com/bmansk8' target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> GitHub</a>
         <a href='https://codepen.io/bmansk14' target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faCodepen} /> CodePen.io</a>
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-        <a href='#' target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faFreeCodeCamp} /> FCC</a>
+        <a href='https://www.freecodecamp.org/bmansk8' target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faFreeCodeCamp} /> FCC</a>
+        <a href='https://reactquote-machine.herokuapp.com/' target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faReact} /> Quote Machine</a>
         <div><FontAwesomeIcon icon={faEnvelope} /> bmansk14@gmail.com</div>
         <div><FontAwesomeIcon icon={faPhone} /> 678-704-7626</div>
         <div><FontAwesomeIcon icon={faMapMarkerAlt} /> Dahlonega Ga</div>
@@ -37,8 +40,9 @@ function App() {
         <div className='col'>
           <p>
             I'm a junior level fullstack developer in search of my first position. I was home schooled and started programming in 8th grade.
-            I had a tutor from Georgia tech for four years. I graduated high school a year early so I could focus on learning full-stack development.
-            Currently taking classes on plural sight including learning how to host applications in the AWS cloud.
+            I had a tutor from Georgia tech for four years. I love coding so much I graduated high school a year early so I could focus on learning full-stack development.
+            React! It's my preferred frame work. I'm also familiar with Redux, Angular, Alpine.js, express, and EJS.
+            I'm currently taking classes on plural sight including learning how to host applications in the AWS cloud.
         </p>
         </div>
       </div>
@@ -47,9 +51,10 @@ function App() {
         <div className='col'>
           <img src={Photo} className='rounded' alt='alt'></img>
           <p>
-            I'm a junior level fullstack developer in search of my first position. I was home schooled and started programming in 8th grade.
-            I had a tutor from Georgia tech for four years. I graduated high school a year early so I could focus on learning full-stack development.
-            Currently taking classes on plural sight including learning how to host applications in the AWS cloud.
+          I'm a junior level fullstack developer in search of my first position. I was home schooled and started programming in 8th grade.
+          I had a tutor from Georgia tech for four years. I love coding so much I graduated high school a year early so I could focus on learning full-stack development.
+          React! It's my preferred frame work. I'm also familiar with Redux, Angular, Alpine.js, express, and EJS.
+          I'm currently taking classes on plural sight including learning how to host applications in the AWS cloud.
         </p>
         </div>
       </div>
@@ -108,7 +113,7 @@ function App() {
       </div>
 
       <footer className='text-center'>
-       <p>Made by Barron V Brock with create react app, and boostrap 4</p>
+        <p>Made by Barron V Brock with create react app, and boostrap 4</p>
       </footer>
 
     </div>
