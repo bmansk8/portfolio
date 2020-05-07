@@ -1,0 +1,24 @@
+.Music{
+  background: linear-gradient(180deg, rgba(255,85,0,1) 0%, rgba(105,105,105,1) 100%);
+  color: black;
+  height: auto;
+  /*100vh*/
+}
+
+#text{
+  margin: auto;
+  padding-top: 3%;
+  width: 50%;
+
+}
+
+iframe{
+  padding: 5px;
+}
+
+
+@media screen and (max-width:1060px){
+  iframe{
+    width: 200px;
+  }
+}

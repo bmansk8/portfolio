@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
-import Photo from './imgs/guitarPhoto.jpeg'
-import pluralsightLogo from './imgs/psLogo.jpg'
+import './Home.css';
+import Photo from '../imgs/guitarPhoto.jpeg'
+import pluralsightLogo from '../imgs/psLogo.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEnvelope,
@@ -17,7 +17,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 
-function App() {
+export default function Home() {
   return (
     <div className="App">
       <header>
@@ -119,5 +119,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
