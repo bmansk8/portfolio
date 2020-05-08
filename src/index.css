@@ -1,10 +1,10 @@
-html body {
+body {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(105,105,105,1) 100%);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Audiowide', cursive;
   color: #C0C0C0;
-  height: 100vh;
 }
 
 code {

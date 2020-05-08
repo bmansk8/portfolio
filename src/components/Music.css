@@ -1,15 +1,7 @@
-.Music{
-  background: linear-gradient(180deg, rgba(255,85,0,1) 0%, rgba(105,105,105,1) 100%);
-  color: black;
-  height: auto;
-  /*100vh*/
-}
-
-#text{
+#music-text{
   margin: auto;
   padding-top: 3%;
   width: 50%;
-
 }
 
 iframe{
@@ -17,8 +9,19 @@ iframe{
 }
 
 
-@media screen and (max-width:1060px){
+@media screen and (max-width:1050px){
   iframe{
     width: 200px;
   }
+}
+
+@media screen and (max-width:540px){
+  iframe{
+    width: 170px;
+  }
+}
+
+footer .row{
+  margin: 0;
+  margin-top: 5%;
 }

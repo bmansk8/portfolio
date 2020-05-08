@@ -7,6 +7,9 @@ import {
   faEnvelope,
   faPhone,
   faMapMarkerAlt,
+  faMusic,
+  faFileCode,
+  faSmileWink
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
@@ -49,12 +52,12 @@ export default function Home() {
 
       <div className='row' id='sm_about'>
         <div className='col'>
-          <img src={Photo} className='rounded' alt='alt'></img>
+          <img id='GtrPhoto' src={Photo} className='rounded' alt='alt'></img>
           <p>
-          I'm a junior level fullstack developer in search of my first position. I was home schooled and started programming in 8th grade.
-          I had a tutor from Georgia tech for four years. I love coding so much I graduated high school a year early so I could focus on learning full-stack development.
-          React! It's my preferred frame work. I'm also familiar with Redux, Angular, Alpine.js, express, and EJS.
-          I'm currently taking classes on plural sight including learning how to host applications in the AWS cloud.
+            I'm a junior level fullstack developer in search of my first position. I was home schooled and started programming in 8th grade.
+            I had a tutor from Georgia tech for four years. I love coding so much I graduated high school a year early so I could focus on learning full-stack development.
+            React! It's my preferred frame work. I'm also familiar with Redux, Angular, Alpine.js, express, and EJS.
+            I'm currently taking classes on plural sight including learning how to host applications in the AWS cloud.
         </p>
         </div>
       </div>
@@ -109,6 +112,21 @@ export default function Home() {
           <h3><img src={pluralsightLogo} alt='plural sight logo' className='rounded psLogo' />HTML 5 skill IQ : 147</h3>
           <a href='https://www.linkedin.com/feed/update/urn:li:activity:6640327717306810368/' rel="noopener noreferrer" target="_blank">verify</a>
           <p>I took the skill assessment fro HTML 5 on <a href='https://www.pluralsight.com/' rel="noopener noreferrer" target="_blank">pluralsight.com</a> and scored 147 out of 300 putting me in the 48th percentile.</p>
+        </div>
+      </div>
+
+      <div className='row' id='moreLinks'>
+        <h2>Creations:</h2>
+        <div className='col'>
+          <h3><FontAwesomeIcon icon={faMusic} /> Music:</h3>
+          <p>I am also a musician. Click <a href='/music'>Here</a> To see some of my music.
+          Musicians also make great programmers <FontAwesomeIcon icon={faSmileWink}/> </p>
+        </div>
+        <div className='col'>
+          <h3><FontAwesomeIcon icon={faFileCode} /> Code:</h3>
+          <p>If you want to see some of my completed projects click <a href='/code'>here</a> to see a list.
+          You can also go to my <a href='https://github.com/bmansk8'>GitHub</a> to see all of my projects.
+          </p>
         </div>
       </div>
 

@@ -3,11 +3,13 @@ import './Music.css'
 
 export default function Music() {
   return (
-    <div className='Music'>
+    <div className='Music rounded'>
 
-      <div id='text' className='text-center'>
+      <div id='music-text' className='text-center'>
         <h1>Music</h1>
-        <p>So you are interested in my music? Well you can listen to some of my tracks below!</p>
+        <p>So you are interested in my music? Well you can listen to some of my tracks below!
+        I mostly play guitar but I also play drums, bass, keys, and mandolin. I tend to lean into 70's and 80's rock
+        but I listen and play a wide variety of music.</p>
       </div>
 
       <div id='players'>
@@ -38,7 +40,6 @@ export default function Music() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

@@ -1,0 +1,63 @@
+#project-txt{
+  margin: auto;
+  padding-top: 3%;
+  width: 50%;
+}
+
+.card{
+  color: black;
+  width: 300px;
+}
+
+.card-body{
+  background:linear-gradient(180deg, rgba(0,194,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.card .card-header{
+  background:linear-gradient(0deg, rgba(0,194,255,1) 0%, rgba(255,255,255,1) 100%);
+  border-bottom:none;
+}
+
+#projects-row{
+  margin-left:18%;
+  margin-right:18%;
+}
+
+@media screen and (max-width:1435px){
+  .card{
+    color: black;
+    width: 200px;
+    font-size: medium;
+  }
+  .card h2{
+    font-size: larger;
+  }
+  
+  #projects-row{
+    margin-left:10%;
+    margin-right:10%;
+  }
+}
+
+@media screen and (max-width:800px){
+  #projects-row{
+    margin-left:0;
+    margin-right:0;
+  }
+}
+
+@media screen and (max-width:640px){
+  #projects-row{
+    margin-left:0;
+    margin-right:0;
+  }
+
+  .card{
+    color: black;
+    width: 150px;
+    font-size: small;
+  }
+  .card h2{
+    font-size: large;
+  }
+}
