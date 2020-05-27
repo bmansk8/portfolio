@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import Photo from '../imgs/guitarPhoto.jpeg'
+import Photo from '../imgs/guitarPhoto.jpg'
 import pluralsightLogo from '../imgs/psLogo.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
