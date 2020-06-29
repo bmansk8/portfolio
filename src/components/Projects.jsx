@@ -23,7 +23,7 @@ export default function Projects() {
           <div className='card'>
             <h2 className='card-header'>React Quote Machine</h2>
             <div className='card-body'>
-              <p>This is a simple React quote machine I created. I used Bootstrap 4, React router DOM, ESLint, Jest, Enzyme, and JQuery.
+              <p>This is a simple React quote machine I created. I used Bootstrap 4, React router DOM, ESLint, and JQuery.
               It's asynchronous and uses React Hooks.</p>
               <Button target="_blank" href='https://reactquote-machine.herokuapp.com/' variant='outline-primary'>Check me out!</Button>
             </div>
