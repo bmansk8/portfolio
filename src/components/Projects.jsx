@@ -41,11 +41,13 @@ export default function Projects() {
           </div></div>
         <div className='col-4'>
           <div className='card'>
-            <h2 className='card-header'>Bootstrap Doc Page</h2>
+            <h2 className='card-header'>IZM Guitars</h2>
             <div className='card-body'>
-              <p>This is a documentation page I created for bootstrap. This was part of my
-              <a rel="noopener noreferrer" target='_blank' href='https://www.freecodecamp.org/'> FreeCodeCamp.org</a> studies.</p>
-              <Button target="_blank" href='https://codepen.io/bmansk14/full/aaejZE' variant='outline-primary'>Check me out!</Button>
+              <p>This is a Guitar buying website I made. It uses a lot of 
+              pre built <a target='blank' href='https://react-bootstrap.github.io/'>React Bootstrap</a> components and
+              Heavy use of imgs and img resizing. Staying responsive was very important.
+              The website is a simple project for me but the guitars are real!</p>
+              <Button target="_blank" href='https://master.d3l8o45biaqq60.amplifyapp.com/' variant='outline-primary'>Check me out!</Button>
             </div>
           </div></div>
       </div>
