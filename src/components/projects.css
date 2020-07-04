@@ -6,7 +6,6 @@
 
 .card{
   color: black;
-  width: 300px;
 }
 
 .card-body{
@@ -25,8 +24,6 @@
 
 @media screen and (max-width:1435px){
   .card{
-    color: black;
-    width: 200px;
     font-size: medium;
   }
   .card h2{
@@ -39,22 +36,15 @@
   }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:992px){
   #projects-row{
-    margin-left:0;
-    margin-right:0;
+    margin: 15px;
   }
 }
 
-@media screen and (max-width:640px){
-  #projects-row{
-    margin-left:0;
-    margin-right:0;
-  }
-
+@media screen and (max-width:768px){
   .card{
-    color: black;
-    width: 150px;
+    margin-bottom: 15px;
     font-size: small;
   }
   .card h2{
