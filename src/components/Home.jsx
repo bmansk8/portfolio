@@ -58,7 +58,7 @@ export default function Home() {
             I had a tutor from Georgia tech for four years. I love coding so much I graduated high school a year early so I could focus on learning full-stack development.
             React! It's my preferred frame work. I'm also familiar with Redux, Angular, Alpine.js, express, and EJS.
             I'm currently taking classes on plural sight including learning how to host applications in the AWS cloud.
-        </p>
+          </p>
         </div>
       </div>
 
@@ -120,7 +120,7 @@ export default function Home() {
         <div className='col'>
           <h3><FontAwesomeIcon icon={faMusic} /> Music:</h3>
           <p>I am also a musician. Click <a href='/music'>Here</a> To see some of my music.
-          Musicians also make great programmers <FontAwesomeIcon icon={faSmileWink}/> </p>
+          Musicians also make great programmers <FontAwesomeIcon icon={faSmileWink} /> </p>
         </div>
         <div className='col'>
           <h3><FontAwesomeIcon icon={faFileCode} /> Code:</h3>

@@ -42,10 +42,6 @@ div .row{
   margin: 5%;
 }
 
-.col p {
-  width: 438px;
-}
-
 footer p{
   margin-bottom: 0;
   padding-bottom: 5px;
@@ -80,5 +76,21 @@ footer p{
   #GtrPhoto{
     width: 50%;
     height: 50%;
+  }
+
+  .col h3{
+    font-size: large;
+  }
+
+  .col a{
+    font-size: large;
+  }
+
+  .row h2{
+    font-size: x-large;
+  }
+
+  .col p{
+    font-size: small;
   }
 }
