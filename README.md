@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## This is hosted on AWS!
 
-[https://master.d1hj2myu9ne23w.amplifyapp.com/](https://master.d1hj2myu9ne23w.amplifyapp.com/)
+[https://www.barronvbrock.net](https://www.barronvbrock.net)
 Simply click the link to see this hosted on AWS Amplify.
 
 ## Available Scripts
