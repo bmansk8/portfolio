@@ -45,7 +45,7 @@ export default function Home() {
             I'm a junior level fullstack developer in search of my first position. I was home schooled and started programming in 8th grade.
             I had a tutor from Georgia tech for four years. I love coding so much I graduated high school a year early so I could focus on learning full-stack development.
             React! It's my preferred frame work. I'm also familiar with Redux, Angular, Alpine.js, express, and EJS.
-            I'm currently taking classes on plural sight including learning how to host applications in the AWS cloud.
+            I'm currently learning how to test using Jest and Enzyme.
         </p>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function Home() {
             I'm a junior level fullstack developer in search of my first position. I was home schooled and started programming in 8th grade.
             I had a tutor from Georgia tech for four years. I love coding so much I graduated high school a year early so I could focus on learning full-stack development.
             React! It's my preferred frame work. I'm also familiar with Redux, Angular, Alpine.js, express, and EJS.
-            I'm currently taking classes on plural sight including learning how to host applications in the AWS cloud.
+            I'm currently learning how to test using Jest and Enzyme.
           </p>
         </div>
       </div>
@@ -80,7 +80,6 @@ export default function Home() {
             <li>Completed the Building web apps with nodeJs and Express class by Johnathan Mills on plural sight.</li>
             <li>Completed RESTfull web services with nodeJS and express by Johnathan Mills on plural sight.</li>
             <li>Finished a associate level AWS cloud class early in January 2020 through plural sight.</li>
-            <li>Currently studying testing with jest, react, and AWS hosting on pluralsight.com</li>
           </ul>
 
         </div>
@@ -88,7 +87,6 @@ export default function Home() {
           <h3>G.E.D</h3>
           <p>The G.E.D covers mathematics, social studies, science, reading and writing. Equivalent to a high school diploma.
              I took my G.E.D a year early to focus on programmng. Graduated with high scores.</p>
-
         </div>
       </div>
 
