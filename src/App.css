@@ -27,6 +27,11 @@
     width: 438px;
     height: 466px;
   }
+
+  .card{
+    color: black;
+    margin: 15px;
+  }
   
   .psLogo{
     width: 33px;
@@ -71,6 +76,11 @@
   
     #name{
       font-size: xxx-large;
+    }
+
+    iframe{
+      width: 300px;
+      margin: 5px;
     }
   }
   
