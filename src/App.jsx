@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Photo from './imgs/guitarPhoto.jpg'
 import pluralsightLogo from './imgs/psLogo.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,6 +18,7 @@ import {
   faFreeCodeCamp,
   faReact
 } from '@fortawesome/free-brands-svg-icons'
+import './App.css';
 
 
 export default function Home() {
@@ -184,7 +184,8 @@ export default function Home() {
       </div>
 
       <footer className='text-center'>
-        <p>Made by Barron V Brock with create react app, and boostrap 4</p>
+        <p>Made by Barron V Brock with create react app, and boostrap 4.</p>
+        <p>Prefer dark or light mode? Change your systems settings and the site will also change.</p>
       </footer>
 
     </div>

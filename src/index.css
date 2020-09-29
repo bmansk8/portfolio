@@ -7,6 +7,18 @@ body {
   color: #C0C0C0;
 }
 
+@media(prefers-color-scheme: light){
+  body {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(105,105,105,1) 100%);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Audiowide', cursive;
+    color: black;
+  }
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
