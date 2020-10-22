@@ -1,0 +1,106 @@
+#HomePage {
+  #name {
+    margin-top: 100px;
+    padding: 1px;
+  }
+
+  img {
+    width: 438px;
+    height: 466px;
+  }
+
+  .card {
+    color: black;
+    margin: 15px;
+  }
+
+  .psLogo {
+    width: 33px;
+    height: 30px;
+    margin: 4px;
+  }
+
+  .col {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .row {
+    padding: 1px;
+    margin: 5%;
+  }
+}
+
+@media screen and (min-width: 1061px) {
+  #HomePage {
+    #lg_about {
+      display: inline-flexbox;
+    }
+    #sm_about {
+      display: none;
+    }
+  }
+}
+
+/*small view v v v */
+@media screen and (max-width: 1060px) {
+  #HomePage {
+    #lg_about {
+      display: none;
+    }
+    #sm_about {
+      display: block;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    #name {
+      font-size: xxx-large;
+    }
+
+    iframe {
+      width: 300px;
+      margin: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #HomePage {
+    #GtrPhoto {
+      width: 50%;
+      height: 50%;
+    }
+
+    .col h3 {
+      font-size: large;
+    }
+
+    .col a {
+      font-size: large;
+    }
+
+    .row h2 {
+      font-size: x-large;
+    }
+
+    .col p {
+      font-size: small;
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #HomePage {
+    .col .card {
+      color: #c0c0c0;
+      border: none;
+    }
+    .card .card-header {
+      background-color: rgba(0, 0, 1, 0.8);
+    }
+    .card-body {
+      background-color: black;
+    }
+  }
+}
