@@ -28,11 +28,11 @@ export default function Home() {
     <Router className='App'>
 
     <header>
-        <a href='https://www.linkedin.com/in/barron-brock-482059174/' target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a>
-        <a href='https://github.com/bmansk8' target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> GitHub</a>
-        <a href='https://codepen.io/bmansk14' target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faCodepen} /> CodePen.io</a>
-        <a href='https://www.freecodecamp.org/bmansk8' target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faFreeCodeCamp} /> FCC</a>
-        <a href='https://reactquote-machine.herokuapp.com/' target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faReact} /> Quote Machine</a>
+        <a href='https://www.linkedin.com/in/barron-brock-482059174/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a>
+        <a href='https://github.com/bmansk8' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faGithub} /> GitHub</a>
+        <a href='https://codepen.io/bmansk14' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faCodepen} /> CodePen.io</a>
+        <a href='https://www.freecodecamp.org/bmansk8' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faFreeCodeCamp} /> FCC</a>
+        <a href='https://reactquote-machine.herokuapp.com/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faReact} /> Quote Machine</a>
         <div><FontAwesomeIcon icon={faEnvelope} /> bmansk14@gmail.com</div>
         <div><FontAwesomeIcon icon={faPhone} /> 678-704-7626</div>
         <div><FontAwesomeIcon icon={faMapMarkerAlt} /> Dahlonega Ga</div>

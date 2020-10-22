@@ -3,8 +3,8 @@ import "../css/Blog.scss";
 
 export default function Blog() {
   return (
-    <div id="Blog">
-      <div id="artical-1">
+    <div id='Blog'>
+      <div id='artical-1'>
         <h1>Building this site!</h1>
 
         <p>
@@ -40,21 +40,24 @@ export default function Blog() {
         </p>
 
         <p>
-          Simply running <span className='npm'>npm install node-sass</span> is all I needed for
-          sass support.
+          Simply running <span className='npm'>npm install node-sass</span> is
+          all I needed for sass support.
         </p>
 
         <p>
-          So now I can simply nest my styles in a id selector and don&apos;t have to
-          worry about styles running into other components that don’t need them
+          So now I can simply nest my styles in a id selector and don&apos;t
+          have to worry about styles running into other components that don’t
+          need them
         </p>
 
         <code> #HomePage &#123; p &#123; color:blue; &#125; &#125;</code>
 
-        <p>Now yes, I could have chained selectors like <span className='code'>#HomePage P &#123;&#125;</span> But 
-        nesting them looked better visually and made the migration quicker. It
-        also was maybe the slight nudge I needed to get me interested in a css pre
-        processor.
+        <p>
+          Now yes, I could have chained selectors like{" "}
+          <span className='code'>#HomePage P &#123;&#125;</span> But nesting
+          them looked better visually and made the migration quicker. It also
+          was maybe the slight nudge I needed to get me interested in a css pre
+          processor.
         </p>
       </div>
     </div>
