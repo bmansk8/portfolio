@@ -6,6 +6,7 @@ import {
   faEnvelope,
   faPhone,
   faMapMarkerAlt,
+  faNewspaper
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
@@ -33,9 +34,10 @@ export default function Home() {
         <a href='https://codepen.io/bmansk14' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faCodepen} /> CodePen.io</a>
         <a href='https://www.freecodecamp.org/bmansk8' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faFreeCodeCamp} /> FCC</a>
         <a href='https://reactquote-machine.herokuapp.com/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faReact} /> Quote Machine</a>
+        <a href='/blog'><FontAwesomeIcon icon={faNewspaper} /> Blog</a>
         <div><FontAwesomeIcon icon={faEnvelope} /> bmansk14@gmail.com</div>
         <div><FontAwesomeIcon icon={faPhone} /> 678-704-7626</div>
-        <div><FontAwesomeIcon icon={faMapMarkerAlt} /> Dahlonega Ga</div>
+        <div><FontAwesomeIcon icon={faMapMarkerAlt} /> Dahlonega Ga</div>   
       </header>
 
       <Switch>

@@ -1,5 +1,6 @@
 $padding-amount: 5px;
 $code-snip-bg-clr: black;
+$curved-brdr: 25px;
 
 #Blog {
   h1 {
@@ -17,20 +18,20 @@ $code-snip-bg-clr: black;
 
   code {
     margin-left: 20%;
-    border-radius: 25px;
+    border-radius: $curved-brdr;
     background-color: $code-snip-bg-clr;
     padding: $padding-amount;
   }
 
   .npm {
     color: yellow;
-    border-radius: 25px;
+    border-radius: $curved-brdr;
     background-color: $code-snip-bg-clr;
     padding: $padding-amount;
   }
 
   .code {
-    border-radius: 25px;
+    border-radius: $curved-brdr;
     background-color: $code-snip-bg-clr;
     padding: $padding-amount;
     color: #e83e8c;
