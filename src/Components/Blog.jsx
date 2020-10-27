@@ -1,3 +1,4 @@
+import { Button } from "react-bootstrap";
 import React from "react";
 import "../css/Blog.scss";
 
@@ -60,6 +61,11 @@ export default function Blog() {
           processor.
         </p>
       </div>
+
+      <div>
+      <p>Want to go <Button href='/' variant='outline-secondary'>Back &lt;--</Button> ?</p>
+      </div>
+      
     </div>
   );
 }

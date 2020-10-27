@@ -8,16 +8,24 @@
   }
   
   header div{
-    display: inline;
+    display: inline-block;
     padding: 7px;
   }
   
   header a{
+    display: inline-block;
     text-decoration: none;
     color: #C0C0C0;
     padding: 7px;
   }
   
+  header a:hover{
+    text-decoration: none;
+    transform: scale(1.07,1.07);
+    color: royalblue;
+    transition-duration: .3s; 
+  }
+
   footer p{
     margin-bottom: 0;
     padding-bottom: 5px;
