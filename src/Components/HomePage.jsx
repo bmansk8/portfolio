@@ -60,7 +60,6 @@ export default function HomePage() {
               rel='noopener noreferrer'
               target='_blank'
             >
-              {" "}
               FreeCodeCamp.org
             </a>{" "}
             Studies
