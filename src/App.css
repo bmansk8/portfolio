@@ -17,8 +17,9 @@
     padding: 7px;
   }
   
-  header a:hover{
+  a:not(.btn):hover{
     text-decoration: none;
+    display: inline-block;
     transform: scale(1.05);
     color: aqua;
     transition-duration: .3s; 

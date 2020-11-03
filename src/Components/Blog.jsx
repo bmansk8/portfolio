@@ -53,7 +53,8 @@ export default function Blog() {
         <code>p&#123; .img(); &#125;</code>
 
         <p>
-          And the main reason I got into a css preprocessor was nesting selectors
+          And the main reason I got into a css preprocessor was nesting
+          selectors
         </p>
 
         <code> div &#123; p &#123; color:blue; &#125; &#125;</code>
@@ -76,16 +77,41 @@ export default function Blog() {
           <li>Css guards</li>
         </ol>
 
-        <p>And even more on the less docs page! Here are some links to check out on your journey to becoming a less master. </p>
+        <p>
+          And even more on the less docs page! Here are some links to check out
+          on your journey to becoming a less master.{" "}
+        </p>
 
         <ul>
-          <li><a href='http://lesscss.org/'>Less website</a></li>
-          <li><a href='https://gist.github.com/bmansk8/e092ede9395fc421d59311bc96507415'>My gist for Less</a> (just css)</li>
-          <li><a href='https://github.com/bmansk8/learning-Less'>My Less repo.</a>  Feel free to clone</li>
-          <li>A great <a href='https://www.youtube.com/watch?v=lJclQekSfSM'>video</a> on using pre processors</li>
+          <li>
+            <a href='http://lesscss.org/'>Less website</a>
+          </li>
+          <li>
+            <a href='https://gist.github.com/bmansk8/e092ede9395fc421d59311bc96507415'>
+              My gist for Less
+            </a>{" "}
+            (just css)
+          </li>
+          <li>
+            <a href='https://github.com/bmansk8/learning-Less'>My Less repo.</a>{" "}
+            Feel free to clone
+          </li>
+          <li>
+            A great{" "}
+            <a href='https://www.youtube.com/watch?v=lJclQekSfSM'>video</a> on
+            using pre processors
+          </li>
         </ul>
-        
 
+        <div>
+          <p>
+            Want to go{" "}
+            <Button href='/' variant='outline-secondary'>
+              Back &lt;--
+            </Button>{" "}
+            ?
+          </p>
+        </div>
       </div>
 
       <div id='article-1'>
