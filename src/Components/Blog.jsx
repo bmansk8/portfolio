@@ -1,10 +1,95 @@
 import { Button } from "react-bootstrap";
 import React from "react";
 import "../css/Blog.scss";
+import pic1 from "../imgs/Array.jpg";
+import pic2 from "../imgs/Array2.jpg";
+import pic3 from "../imgs/Array3.jpg";
 
 export default function Blog() {
   return (
     <div id='Blog'>
+      <div id='article 3'>
+        <h1>Array manipulation</h1>
+        <p>
+          So I recently had a skill assmeant for a job. There was a html section
+          but the JS side is more interesting to me as that&apos;s something I
+          tend to neglect. Yes I use React, Express, React Router, and all the
+          other frameworks/tools on the JS side. But I find myself being more
+          and more frontend focused every day. So high time I sharpened my JS
+          skills!
+        </p>
+
+        <p>
+          So first off, the array I&apos;m manipulating. So this was for a Job
+          so i won’t go into details since that would give the answers away but
+          these are pretty general tasks. First off, make an array and make sure
+          it’s constant. Do something like this.
+        </p>
+
+        <img src={pic1} alt='array' />
+
+        <p>
+          So I threw this in a <span className='code'>.json</span> file. You can
+          just import it into your JS file. Note everything being strings is
+          important. My challenge did not use numbers but that just helps make
+          it easier.{" "}
+        </p>
+
+        <p>
+          So my first task was to get all the objects from group one. So I
+          should return 3 objects. Now i tried doing it with a for loop{" "}
+        </p>
+        <code>{`for (let i=0; i < arr.length: i++){
+          /*go through array and get what i need.*/
+        }`}</code>
+
+        <p>
+          But there is a better way! <span className='code'>.filter()</span> oh
+          my gosh YES! <span className='code'>.filter()</span> makes life so
+          easy and allows for less code than a for loop. Since our objects are
+          in an array we can use this feature.{" "}
+        </p>
+
+        <code>{`
+         return arr.filter( (e) =>{ return e.group == '1'})
+        `}</code>
+
+        <p>
+          Boom! Job done! Now there are two more to go. Next is storing the objs
+          by group. Basically all group 1 objs in a obj and all group 2 objs in
+          an object. Like this
+        </p>
+
+        <img src={pic2} alt='Array 2' />
+
+        <p>Last but not least all group 1 objs that have more than 1 alias.</p>
+
+        <img src={pic3} alt='Array 3' />
+
+        <p>
+          We filter all the group 1 objs so we are just working with those. Then
+          using destructuring we grab the alias property and match it to a regex
+          for a comma. Note the <span className='code'>String(alias)</span> we
+          have to specify we are checking string or{" "}
+          <span className='code'>.match()</span> won’t be a function. If you
+          made your array like I did then a comma separates all the values. In
+          the coding interview I did, it used first and last names, so I
+          couldn&apos;t just check for spaces.
+        </p>
+
+        <p>
+          So all in all, <span className='code'>.filter()</span> is a super
+          useful method we can call that really cuts down on the amount of code
+          we write. Thanks <span className='code'>.filter()</span>!
+        </p>
+      </div>
+
+
+
+      {/* next article */}
+
+
+      
       <div id='article-2'>
         <h1>Less css!</h1>
         <p>
@@ -113,6 +198,12 @@ export default function Blog() {
           </p>
         </div>
       </div>
+
+
+
+       {/* next article */}
+
+
 
       <div id='article-1'>
         <h1>Building this site!</h1>

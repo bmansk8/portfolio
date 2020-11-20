@@ -40,6 +40,12 @@ $p-margn-t-b:15px;
     @include secondary-margin-l;
   }
 
+  img{
+    border-radius: $curved-brdr;
+    padding: $padding-amount;
+    @include primary-margin-l()
+  }
+
   a:hover{
     text-decoration: none;
     display: inline-block;
@@ -81,6 +87,9 @@ $p-margn-t-b:15px;
       margin-right: 10%;
     }
 
+    img{
+      @include secondary-margin-l()
+    }
     code {
       @include secondary-margin-l;
     }
