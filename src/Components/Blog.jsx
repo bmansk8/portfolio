@@ -11,7 +11,7 @@ export default function Blog() {
       <div id='article 3'>
         <h1>Array manipulation</h1>
         <p>
-          So I recently had a skill assmeant for a job. There was a html section
+          So I recently had a skill assessment for a job. There was a html section
           but the JS side is more interesting to me as that&apos;s something I
           tend to neglect. Yes I use React, Express, React Router, and all the
           other frameworks/tools on the JS side. But I find myself being more
@@ -29,30 +29,32 @@ export default function Blog() {
         <img src={pic1} alt='array' />
 
         <p>
-          So I threw this in a <span className='code'>.json</span> file. You can
-          just import it into your JS file. Note everything being strings is
-          important. My challenge did not use numbers but that just helps make
-          it easier.{" "}
+          So I threw this in a <span className='nestedCode'>.json</span> file.
+          You can just import it into your JS file. Note everything being
+          strings is important. My challenge did not use numbers but that just
+          helps make it easier.{" "}
         </p>
 
         <p>
           So my first task was to get all the objects from group one. So I
           should return 3 objects. Now i tried doing it with a for loop{" "}
         </p>
-        <code>{`for (let i=0; i < arr.length: i++){
+
+        <p className='code'>{`for (let i=0; i < arr.length: i++){
           /*go through array and get what i need.*/
-        }`}</code>
+        }`}</p>
 
         <p>
-          But there is a better way! <span className='code'>.filter()</span> oh
-          my gosh YES! <span className='code'>.filter()</span> makes life so
-          easy and allows for less code than a for loop. Since our objects are
-          in an array we can use this feature.{" "}
+          But there is a better way!{" "}
+          <span className='nestedCode'>.filter()</span> oh my gosh YES!{" "}
+          <span className='nestedCode'>.filter()</span> makes life so easy and
+          allows for less code than a for loop. Since our objects are in an
+          array we can use this feature.{" "}
         </p>
 
-        <code>{`
+        <p className='code'>{`
          return arr.filter( (e) =>{ return e.group == '1'})
-        `}</code>
+        `}</p>
 
         <p>
           Boom! Job done! Now there are two more to go. Next is storing the objs
@@ -69,27 +71,33 @@ export default function Blog() {
         <p>
           We filter all the group 1 objs so we are just working with those. Then
           using destructuring we grab the alias property and match it to a regex
-          for a comma. Note the <span className='code'>String(alias)</span> we
-          have to specify we are checking string or{" "}
-          <span className='code'>.match()</span> won’t be a function. If you
-          made your array like I did then a comma separates all the values. In
-          the coding interview I did, it used first and last names, so I
-          couldn&apos;t just check for spaces.
+          for a comma. Note the{" "}
+          <span className='nestedCode'>String(alias)</span> we have to specify
+          we are checking string or <span className='nestedCode'>.match()</span>{" "}
+          won’t be a function. If you made your array like I did then a comma
+          separates all the values. In the coding interview I did, it used first
+          and last names, so I couldn&apos;t just check for spaces.
         </p>
 
         <p>
-          So all in all, <span className='code'>.filter()</span> is a super
-          useful method we can call that really cuts down on the amount of code
-          we write. Thanks <span className='code'>.filter()</span>!
+          So all in all, <span className='nestedCode'>.filter()</span> is a
+          super useful method we can call that really cuts down on the amount of
+          code we write. Thanks <span className='nestedCode'>.filter()</span>!
         </p>
+
+        <div>
+          <p>
+            Want to go{" "}
+            <Button href='/' variant='outline-secondary'>
+              Back &lt;--
+            </Button>{" "}
+            ?
+          </p>
+        </div>
       </div>
-
-
 
       {/* next article */}
 
-
-      
       <div id='article-2'>
         <h1>Less css!</h1>
         <p>
@@ -123,26 +131,26 @@ export default function Blog() {
 
         <p>So how do less vars work? Like this,</p>
 
-        <code> @primary: red; </code>
+        <p className='code'> @primary: red; </p>
 
         <p>Then in a selector you go</p>
 
-        <code> p &#123;color: @primary;&#125; </code>
+        <p className='code'> p &#123;color: @primary;&#125; </p>
 
         <p>Another cool feature is mixins. Less mixins work like this</p>
 
-        <code>.img&#123; width:300px; height:300px; &#125;</code>
+        <p className='code'>.img&#123; width:300px; height:300px; &#125;</p>
 
         <p>Then we can use those styles in another selector.</p>
 
-        <code>p&#123; .img(); &#125;</code>
+        <p className='code'>p&#123; .img(); &#125;</p>
 
         <p>
           And the main reason I got into a css preprocessor was nesting
           selectors
         </p>
 
-        <code> div &#123; p &#123; color:blue; &#125; &#125;</code>
+        <p className='code'> div &#123; p &#123; color:blue; &#125; &#125;</p>
 
         <p>
           I talk about this in the first blog post. Simply scroll down to see
@@ -199,11 +207,7 @@ export default function Blog() {
         </div>
       </div>
 
-
-
-       {/* next article */}
-
-
+      {/* next article */}
 
       <div id='article-1'>
         <h1>Building this site!</h1>
@@ -219,7 +223,7 @@ export default function Blog() {
           do.
         </p>
 
-        <code>@media (prefers-color-scheme: light){}</code>
+        <p className='code'>@media (prefers-color-scheme: light){}</p>
 
         <p>This simple query checks for the users system preference. Bam!</p>
 
@@ -230,7 +234,7 @@ export default function Blog() {
           just nest my css in a selector that only affected each component like:
         </p>
 
-        <code>#HomePage&#123;styles in here..&#125;</code>
+        <p className='code'>#HomePage&#123;styles in here..&#125;</p>
 
         <p>
           Now sadly this is not possible in vanilla css, <b>BUT</b> it is with
@@ -251,14 +255,17 @@ export default function Blog() {
           need them
         </p>
 
-        <code> #HomePage &#123; p &#123; color:blue; &#125; &#125;</code>
+        <p className='code'>
+          {" "}
+          #HomePage &#123; p &#123; color:blue; &#125; &#125;
+        </p>
 
         <p>
           Now yes, I could have chained selectors like{" "}
-          <span className='code'>#HomePage P &#123;&#125;</span> But nesting
-          them looked better visually and made the migration quicker. It also
-          was maybe the slight nudge I needed to get me interested in a css pre
-          processor.
+          <span className='nestedCode'>#HomePage P &#123;&#125;</span> But
+          nesting them looked better visually and made the migration quicker. It
+          also was maybe the slight nudge I needed to get me interested in a css
+          pre processor.
         </p>
       </div>
 

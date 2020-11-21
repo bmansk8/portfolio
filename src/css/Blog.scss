@@ -1,11 +1,11 @@
 $padding-amount: 5px;
 $code-snip-bg-clr: black;
 $curved-brdr: 25px;
-$p-margn-t-b:15px;
-@mixin primary-margin-l{
+$p-margn-t-b: 15px;
+@mixin primary-margin-l {
   margin-left: 20%;
 }
-@mixin secondary-margin-l{
+@mixin secondary-margin-l {
   margin-left: 10%;
 }
 
@@ -25,33 +25,38 @@ $p-margn-t-b:15px;
     margin-bottom: $p-margn-t-b;
   }
 
-  code {
+  .code {
     @include primary-margin-l;
     border-radius: $curved-brdr;
     background-color: $code-snip-bg-clr;
     padding: $padding-amount;
+    width: max-content;
+    color: #e83e8c;
+    font-size: 87.5%;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
   }
 
-  ol{
+  ol {
     @include secondary-margin-l;
   }
 
-  ul{
+  ul {
     @include secondary-margin-l;
   }
 
-  img{
+  img {
     border-radius: $curved-brdr;
     padding: $padding-amount;
-    @include primary-margin-l()
+    @include primary-margin-l();
   }
 
-  a:hover{
+  a:hover {
     text-decoration: none;
     display: inline-block;
     transform: scale(1.05);
     color: aqua;
-    transition-duration: .3s; 
+    transition-duration: 0.3s;
   }
 
   .npm {
@@ -61,7 +66,7 @@ $p-margn-t-b:15px;
     padding: $padding-amount;
   }
 
-  .code {
+  .nestedCode {
     border-radius: $curved-brdr;
     background-color: $code-snip-bg-clr;
     padding: $padding-amount;
@@ -87,11 +92,18 @@ $p-margn-t-b:15px;
       margin-right: 10%;
     }
 
-    img{
-      @include secondary-margin-l()
+    img {
+      @include secondary-margin-l();
     }
-    code {
+    .code {
       @include secondary-margin-l;
+      width: auto;
     }
+  }
+}
+
+@media screen and (max-width:520px){
+  img{
+    width: 80%;
   }
 }
