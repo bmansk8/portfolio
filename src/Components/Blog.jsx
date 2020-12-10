@@ -8,6 +8,35 @@ import pic3 from "../imgs/Array3.jpg";
 export default function Blog() {
   return (
     <div id='Blog'>
+
+
+    {/* 
+    Do I want to switch over to these pre tags and in turn go back to the code tags....
+    or stick with the photos?
+
+    also do i want to use the half moon frame work for a article?
+
+    might cause some bloat and it already takes a good while to compile and start the dev server.
+
+    <div id='test article'>
+        <h1>test</h1>
+        <p>test article</p>
+        <pre>
+          <p className='code'>{`
+for (let i=0; i < arr.length: i++){
+  go through array and get what i need.
+}
+
+var 1
+var 2
+var 3
+          `}
+          </p>
+        </pre>
+      </div>
+    */}
+      
+
       <div id='article 3'>
         <h1>Array manipulation</h1>
         <p>
