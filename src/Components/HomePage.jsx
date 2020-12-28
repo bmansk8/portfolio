@@ -1,15 +1,15 @@
 import React from "react";
 import Photo from "../imgs/guitarPhoto.jpg";
 import pluralsightLogo from "../imgs/psLogo.jpg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Button } from 'react-bootstrap';
-import { faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button } from "react-bootstrap";
+import { faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons";
 import {
   faMusic,
   faFileCode,
-  faSmileWink
-} from '@fortawesome/free-solid-svg-icons'
-import '../css/HomePage.scss'
+  faSmileWink,
+} from "@fortawesome/free-solid-svg-icons";
+import "../css/HomePage.scss";
 
 export default function HomePage() {
   return (
@@ -29,8 +29,9 @@ export default function HomePage() {
             I had a tutor from Georgia tech for four years. I love coding so
             much I graduated high school a year early so I could focus on
             learning full-stack development. React! It&apos;s my preferred frame
-            work. I&apos;m also familiar with Redux, Angular, Alpine.js, express, and
-            EJS. I&apos;m currently learning how to test using Jest and Enzyme.
+            work. I&apos;m also familiar with Redux, Angular, Alpine.js,
+            express, and EJS. I&apos;m currently learning how to test using Jest
+            and Enzyme.
           </p>
         </div>
       </div>
@@ -44,8 +45,9 @@ export default function HomePage() {
             I had a tutor from Georgia tech for four years. I love coding so
             much I graduated high school a year early so I could focus on
             learning full-stack development. React! It&apos;s my preferred frame
-            work. I&apos;m also familiar with Redux, Angular, Alpine.js, express, and
-            EJS. I&apos;m currently learning how to test using Jest and Enzyme.
+            work. I&apos;m also familiar with Redux, Angular, Alpine.js,
+            express, and EJS. I&apos;m currently learning how to test using Jest
+            and Enzyme.
           </p>
         </div>
       </div>
@@ -137,7 +139,8 @@ export default function HomePage() {
             </a>
           </p>
           <p>
-            I completed FCC&apos;s JavaScript Algorithms and Data Structures course.
+            I completed FCC&apos;s JavaScript Algorithms and Data Structures
+            course.
           </p>
         </div>
         <div className='col'>
@@ -215,7 +218,8 @@ export default function HomePage() {
 
       <div className='row' id='Code'>
         <h2>Creations:</h2>
-        <div className='col'>
+
+        <div id='creations' className='col'>
           <h3>
             <FontAwesomeIcon icon={faFileCode} /> Code:
           </h3>
@@ -226,7 +230,19 @@ export default function HomePage() {
             projects.
           </p>
         </div>
+
         <div className='col'>
+          <div id='creationsNested'>
+            <h3>
+              <FontAwesomeIcon icon={faFileCode} /> Code:
+            </h3>
+            <p>
+              If you want to see some of my completed projects click Check them
+              out below. You can also go to my{" "}
+              <a href='https://github.com/bmansk8'>GitHub</a> to see all of my
+              projects.
+            </p>
+          </div>
           <div className='card'>
             <h2 className='card-header'>Fullstack JavaScript app</h2>
             <div className='card-body'>
@@ -251,8 +267,8 @@ export default function HomePage() {
             <div className='card-body'>
               <p>
                 This is a simple React quote machine I created. I used Bootstrap
-                4, React router DOM, ESLint, and JQuery. It&apos;s asynchronous and
-                uses React Hooks.
+                4, React router DOM, ESLint, and JQuery. It&apos;s asynchronous
+                and uses React Hooks.
               </p>
               <Button
                 target='_blank'
@@ -310,6 +326,24 @@ export default function HomePage() {
         </div>
         <div className='col'>
           <iframe
+            width='500px'
+            height='166'
+            scrolling='no'
+            frameBorder='no'
+            allow='autoplay'
+            src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/954268564&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
+          ></iframe>
+
+          <iframe
+            width='500px'
+            height='166'
+            scrolling='no'
+            frameBorder='no'
+            allow='autoplay'
+            src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/933091150&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
+          ></iframe>
+
+          <iframe
             title='MorningDew'
             width='500px'
             height='166'
@@ -327,26 +361,6 @@ export default function HomePage() {
             frameBorder='no'
             allow='autoplay'
             src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/710317231&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
-          ></iframe>
-
-          <iframe
-            title='ContrayMotionSynthRemix'
-            width='500px'
-            height='166'
-            scrolling='no'
-            frameBorder='no'
-            allow='autoplay'
-            src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/676244819&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
-          ></iframe>
-
-          <iframe
-            title='ContraryMotion'
-            width='500px'
-            height='166'
-            scrolling='no'
-            frameBorder='no'
-            allow='autoplay'
-            src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/676242815&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
           ></iframe>
         </div>
       </div>

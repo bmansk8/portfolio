@@ -1,4 +1,12 @@
 #HomePage {
+  #creationsNested{
+    display: none;
+  }
+
+  #creations{
+    display: block;
+  }
+
   #name {
     margin-top: 100px;
     padding: 1px;
@@ -45,6 +53,14 @@
 /*small view v v v */
 @media screen and (max-width: 1060px) {
   #HomePage {
+    #creationsNested{
+      display: block;
+    }
+
+    #creations{
+      display: none;
+    }
+
     #lg_about {
       display: none;
     }
@@ -74,6 +90,10 @@
 
     .col h3 {
       font-size: large;
+    }
+
+    .col li {
+      font-size: small;
     }
 
     .col a {

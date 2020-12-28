@@ -36,3 +36,17 @@
       color: black;
     }
   }
+
+  @media screen and (max-width: 1060px) {
+    header a {
+      font-size: medium;
+    }
+
+    header div{
+      font-size: medium;
+    }
+
+    footer{
+      font-size: small;
+    }
+  }
