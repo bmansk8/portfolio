@@ -24,14 +24,12 @@ export default function HomePage() {
         </div>
         <div className='col'>
           <p>
-            I&apos;m a junior level fullstack developer in search of my first
-            position. I was home schooled and started programming in 8th grade.
-            I had a tutor from Georgia tech for four years. I love coding so
-            much I graduated high school a year early so I could focus on
-            learning full-stack development. React! It&apos;s my preferred frame
-            work. I&apos;m also familiar with Redux, Angular, Alpine.js,
-            express, and EJS. I&apos;m currently learning how to test using Jest
-            and Enzyme.
+            I&apos;m a junior level full stack web developer in search of my
+            first position. I&apos;m most comfortable in React and the AWS cloud.
+            Learning new tools and languages from doc pages and online courses
+            is one of my strengths. I recently finished some array manipulation
+            courses. I&apos;m laid back and easily self motivated. Coding is my
+            passion and I can’t wait to land my first position.
           </p>
         </div>
       </div>
@@ -40,14 +38,12 @@ export default function HomePage() {
         <div className='col'>
           <img id='GtrPhoto' src={Photo} className='rounded' alt='alt'></img>
           <p>
-            I&apos;m a junior level fullstack developer in search of my first
-            position. I was home schooled and started programming in 8th grade.
-            I had a tutor from Georgia tech for four years. I love coding so
-            much I graduated high school a year early so I could focus on
-            learning full-stack development. React! It&apos;s my preferred frame
-            work. I&apos;m also familiar with Redux, Angular, Alpine.js,
-            express, and EJS. I&apos;m currently learning how to test using Jest
-            and Enzyme.
+            I&apos;m a junior level full stack web developer in search of my
+            first position. I&apos;m most comfortable in React and the AWS cloud.
+            Learning new tools and languages from doc pages and online courses
+            is one of my strengths. I recently finished some array manipulation
+            courses. I&apos;m laid back and easily self motivated. Coding is my
+            passion and I can’t wait to land my first position.
           </p>
         </div>
       </div>

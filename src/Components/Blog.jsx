@@ -23,13 +23,13 @@ export default function Blog() {
         <p>test article</p>
         <pre>
           <p className='code'>{`
-for (let i=0; i < arr.length: i++){
-  go through array and get what i need.
-}
+          for (let i=0; i < arr.length: i++){
+            go through array and get what i need.
+          }
 
-var 1
-var 2
-var 3
+          var 1
+          var 2
+          var 3
           `}
           </p>
         </pre>
