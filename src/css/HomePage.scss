@@ -12,6 +12,10 @@
     padding: 1px;
   }
 
+  h2{
+    margin-left: 5%;
+  }
+
   img {
     width: 438px;
     height: 466px;
@@ -36,6 +40,7 @@
   .row {
     padding: 1px;
     margin: 5%;
+    margin-top: 2%;
   }
 }
 
@@ -74,6 +79,11 @@
       font-size: xxx-large;
     }
 
+    #GtrPhoto{
+      margin: auto;    
+      display: block;
+    }
+
     iframe {
       width: 300px;
       margin: 5px;
@@ -84,8 +94,8 @@
 @media screen and (max-width: 570px) {
   #HomePage {
     #GtrPhoto {
-      width: 50%;
-      height: 50%;
+      width: 250px;
+      height: 250px;
     }
 
     .col h3 {

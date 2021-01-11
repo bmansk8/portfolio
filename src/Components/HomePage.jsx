@@ -24,12 +24,14 @@ export default function HomePage() {
         </div>
         <div className='col'>
           <p>
-            I&apos;m a junior level full stack web developer in search of my
-            first position. I&apos;m most comfortable in React and the AWS cloud.
-            Learning new tools and languages from doc pages and online courses
-            is one of my strengths. I recently finished some array manipulation
-            courses. I&apos;m laid back and easily self motivated. Coding is my
-            passion and I can’t wait to land my first position.
+            I&apos;m a junior level full stack web developer. I&apos;m most
+            comfortable in React and the AWS cloud. Learning new tools and
+            languages from doc pages and online courses is one of my strengths.
+            I recently finished some array manipulation courses. I&apos;m laid
+            back and easily self motivated. I’m a musician and that is my main
+            creative outlet. Also writing, journaling, basketball, and running
+            are some of my main hobbies. Coding is my passion and I can’t wait
+            to land my first position.
           </p>
         </div>
       </div>
@@ -38,18 +40,20 @@ export default function HomePage() {
         <div className='col'>
           <img id='GtrPhoto' src={Photo} className='rounded' alt='alt'></img>
           <p>
-            I&apos;m a junior level full stack web developer in search of my
-            first position. I&apos;m most comfortable in React and the AWS cloud.
-            Learning new tools and languages from doc pages and online courses
-            is one of my strengths. I recently finished some array manipulation
-            courses. I&apos;m laid back and easily self motivated. Coding is my
-            passion and I can’t wait to land my first position.
+            I&apos;m a junior level full stack web developer. I&apos;m most
+            comfortable in React and the AWS cloud. Learning new tools and
+            languages from doc pages and online courses is one of my strengths.
+            I recently finished some array manipulation courses. I&apos;m laid
+            back and easily self motivated. I’m a musician and that is my main
+            creative outlet. Also writing, journaling, basketball, and running
+            are some of my main hobbies. Coding is my passion and I can’t wait
+            to land my first position.
           </p>
         </div>
       </div>
 
+      <h2>Education:</h2>
       <div className='row' id='education'>
-        <h2>Education:</h2>
         <div className='col'>
           <h3>
             <FontAwesomeIcon icon={faFreeCodeCamp} />
@@ -117,8 +121,8 @@ export default function HomePage() {
         </div>
       </div>
 
+      <h2>Certifications:</h2>
       <div className='row' id='certifications'>
-        <h2>Certifications:</h2>
         <div className='col'>
           <h3>
             <FontAwesomeIcon icon={faFreeCodeCamp} /> Javascript Algorithms and
@@ -212,9 +216,8 @@ export default function HomePage() {
         </div>
       </div>
 
+      <h2>Creations:</h2>
       <div className='row' id='Code'>
-        <h2>Creations:</h2>
-
         <div id='creations' className='col'>
           <h3>
             <FontAwesomeIcon icon={faFileCode} /> Code:
@@ -240,7 +243,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className='card'>
-            <h2 className='card-header'>Fullstack JavaScript app</h2>
+            <h3 className='card-header'>Fullstack JavaScript app</h3>
             <div className='card-body'>
               <p>
                 This is a full stack web project using HTML, CSS, JavaScript,
@@ -259,7 +262,7 @@ export default function HomePage() {
           </div>
 
           <div className='card'>
-            <h2 className='card-header'>React Quote Machine</h2>
+            <h3 className='card-header'>React Quote Machine</h3>
             <div className='card-body'>
               <p>
                 This is a simple React quote machine I created. I used Bootstrap
@@ -277,7 +280,7 @@ export default function HomePage() {
           </div>
 
           <div className='card'>
-            <h2 className='card-header'>IZM Guitars</h2>
+            <h3 className='card-header'>IZM Guitars</h3>
             <div className='card-body'>
               <p>
                 This is a Guitar buying website I made. It uses a lot of pre
@@ -302,7 +305,6 @@ export default function HomePage() {
       </div>
 
       <div className='row' id='Music'>
-        <h2>Creations:</h2>
         <div className='col'>
           <h3>
             <FontAwesomeIcon icon={faMusic} /> Music:
