@@ -280,21 +280,15 @@ export default function HomePage() {
           </div>
 
           <div className='card'>
-            <h3 className='card-header'>IZM Guitars</h3>
+            <h3 className='card-header'>2FA</h3>
             <div className='card-body'>
               <p>
-                This is a Guitar buying website I made. It uses a lot of pre
-                built{" "}
-                <a target='blank' href='https://react-bootstrap.github.io/'>
-                  React Bootstrap
-                </a>{" "}
-                components and Heavy use of imgs and img resizing. Staying
-                responsive was very important. The website is a simple project
-                for me but the guitars are real!
+                This is a simple 2FA app I created from a YouTube tutorial using
+                express, node-json-db, speakeasy and uuid.
               </p>
               <Button
                 target='_blank'
-                href='https://master.d3l8o45biaqq60.amplifyapp.com/'
+                href='https://github.com/bmansk8/2FA'
                 variant='outline-primary'
               >
                 Check me out!
@@ -319,7 +313,16 @@ export default function HomePage() {
               here
             </a>{" "}
             to see all of my music. Musicians also make great programmers{" "}
-            <FontAwesomeIcon icon={faSmileWink} />{" "}
+            <FontAwesomeIcon icon={faSmileWink} />. If you want to see more of
+            my music, articles, or photos simply click{" "}
+            <a
+              rel='noopener noreferrer'
+              target='_blank'
+              href='https://barron-blog.vercel.app'
+            >
+              here
+            </a>{" "}
+            to go to my personal blog.
           </p>
         </div>
         <div className='col'>

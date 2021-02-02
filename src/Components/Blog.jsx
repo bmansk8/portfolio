@@ -8,44 +8,140 @@ import pic3 from "../imgs/Array3.jpg";
 export default function Blog() {
   return (
     <div id='Blog'>
-
-
-    {/* 
-    Do I want to switch over to these pre tags and in turn go back to the code tags....
-    or stick with the photos?
-
-    also do i want to use the half moon frame work for a article?
-
-    might cause some bloat and it already takes a good while to compile and start the dev server.
-
-    <div id='test article'>
-        <h1>test</h1>
-        <p>test article</p>
-        <pre>
-          <p className='code'>{`
-          for (let i=0; i < arr.length: i++){
-            go through array and get what i need.
-          }
-
-          var 1
-          var 2
-          var 3
-          `}
-          </p>
-        </pre>
-      </div>
+      {/* 
+    <pre><code></code></pre> are the way to go for sure.
     */}
-      
+
+      <div id='article 4'>
+        <h1>Next.js</h1>
+        <p>
+          &quot;Next.js gives you the best developer experience with all the
+          features you need for production: hybrid static & server rendering,
+          TypeScript support, smart bundling, route prefetching, and more. No
+          config needed.&quot; to quote their home page.
+        </p>
+
+        <p>
+          So why did I decide to use Next.js? Honestly, I was intrigued with
+          static site generation and the file tree style routing Next offered.
+          I’m a huge create-react-app fanboy and I love react-router so this was
+          something all new to me. Now all I needed was a project to build. What
+          is the most common starter project you might ask? Well a blog site of
+          course. There are tons of tutorials for this and it’s also Next.js’
+          way of teaching you the ropes on their doc page. So that’s what I did.
+        </p>
+
+        <p>
+          To bootstrap your project simply run{" "}
+          <span className='npm'>{`npx create-next-app`}</span> And then your
+          Next.js app is up and running with thte needed dependencies.
+        </p>
+
+        <p>
+          Now there are a lot of tutorials about making a blog site with
+          Next.js. Nested routes, using .md files, or even using typescript but
+          as someone who just did the tutorial on the docs page I kept my site
+          simple. No dynamic routes, really no routes at all, and I am not using
+          .md files. I simply wanted photos, text, and iframes from soundcloud
+          so I could share my music. I won’t share everything I did but here are
+          some small things I encountered.
+        </p>
+
+        <p>
+          So one amazing thing is routes are based off of your file structure.{" "}
+          <span className='nestedCode'>/pages/posts/article.jsx</span> is a
+          valid route in Next.js. This in turn makes life very easy in terms of
+          writing out all your routes. The [] braces are used for dynamic routes
+          if you want to add them. So I had my pages and posts set up. In the{" "}
+          <span className='nestedCode'>/public/css</span> I had my css and
+          folder called utilities with my scss variables. Simply run{" "}
+          <span className='npm'>npm install sass </span>
+          for sass support.
+        </p>
+
+        <p>
+          One weird quirk I&apos;m not used to is including all the css files in
+          the main <span className='nestedCode'> _app.js</span> file. The list
+          of imports on a large project would be huge and forgetting to add a
+          css file to the list would happen once or twice I’m sure. To add
+          another weird quirk is how Next handles fonts. Now I might be missing
+          something here but adding fonts is very tricky. If you want to use a
+          font, I used one from google, you add the link tag to every file that
+          is using that font. Simply set that font as the default in the global
+          css file. Obviously though writing the same code more than once is bad
+          practice but I couldn’t find a lot about this online. So yes each file
+          includes a link tag pointing to the font.
+        </p>
+
+        <p>
+          Next.js also made a img component they strongly suggest using but
+          personally I’m not a fan. I found styling myself instead of fighting
+          with the default styles worked out far better for me. Also having to
+          set the width and height in the component was not something I liked.
+          My project is small enough whatever benefits when it comes to load
+          times just are not worth it to me.
+        </p>
+
+        <p>
+          I also was going to add a light/dark mode but since things are
+          statically generated that is not possible with my level of
+          understanding. I suppose in theory you could build the site, then
+          check what style the user prefers and resend the project with those
+          styles but that seems like it would have a lot of reloading involved.
+          So the level of interactibilty that comes from client side rendering
+          was something I missed.
+        </p>
+
+        <p>
+          So to end this post, yes Next.js is cool, but for me and future
+          projects I am planning on returning to create-react-app and client
+          side rendering. Oddly enough my scss skills improved more than
+          anything on this project. I will say hosting on vercel is an amazing
+          way to host a Next.js app and really competes with aws on that front.
+          But for me there is just not enough there to really commit to
+          switching to Next.js. I can see the appeal but it’s just not for me.
+        </p>
+
+        <p>
+          If you want to see the blog I built go{" "}
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://barron-blog.vercel.app/'
+          >
+            here
+          </a>
+          , or see the github repo{" "}
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://github.com/bmansk8/barron-blog'
+          >
+            here
+          </a>
+          . Happy coding!
+        </p>
+
+        <div>
+          <p>
+            Want to go{" "}
+            <Button href='/' variant='outline-secondary'>
+              Back &lt;--
+            </Button>{" "}
+            ?
+          </p>
+        </div>
+      </div>
 
       <div id='article 3'>
         <h1>Array manipulation</h1>
         <p>
-          So I recently had a skill assessment for a job. There was a html section
-          but the JS side is more interesting to me as that&apos;s something I
-          tend to neglect. Yes I use React, Express, React Router, and all the
-          other frameworks/tools on the JS side. But I find myself being more
-          and more frontend focused every day. So high time I sharpened my JS
-          skills!
+          So I recently had a skill assessment for a job. There was a html
+          section but the JS side is more interesting to me as that&apos;s
+          something I tend to neglect. Yes I use React, Express, React Router,
+          and all the other frameworks/tools on the JS side. But I find myself
+          being more and more frontend focused every day. So high time I
+          sharpened my JS skills!
         </p>
 
         <p>
