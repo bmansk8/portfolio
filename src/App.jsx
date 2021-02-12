@@ -38,7 +38,7 @@ export default function Home() {
         <a href='https://barron-blog.vercel.app/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faNewspaper}/> Creative Blog</a>
         <div><FontAwesomeIcon icon={faEnvelope} /> bmansk14@gmail.com</div>
         <div><FontAwesomeIcon icon={faPhone} /> 678-704-7626</div>
-        <div><FontAwesomeIcon icon={faMapMarkerAlt} /> Dahlonega Ga</div>   
+        <div><FontAwesomeIcon icon={faMapMarkerAlt} /> Atlanta Ga</div>   
       </header>
 
       <Switch>
