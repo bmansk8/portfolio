@@ -27,8 +27,8 @@ export default function HomePage() {
             I&apos;m a junior level full stack web developer. I&apos;m most
             comfortable in React and the AWS cloud. Learning new tools and
             languages from doc pages and online courses is one of my strengths.
-            I recently finished some array manipulation courses. I&apos;m laid
-            back and easily self motivated. I’m a musician and that is my main
+            I recently have been working a lot with Next.js. I&apos;m laid back
+            and easily self motivated. I’m a musician and that is my main
             creative outlet. Also writing, journaling, basketball, and running
             are some of my main hobbies. Coding is my passion and I can’t wait
             to land my first position.
@@ -43,8 +43,8 @@ export default function HomePage() {
             I&apos;m a junior level full stack web developer. I&apos;m most
             comfortable in React and the AWS cloud. Learning new tools and
             languages from doc pages and online courses is one of my strengths.
-            I recently finished some array manipulation courses. I&apos;m laid
-            back and easily self motivated. I’m a musician and that is my main
+            I recently have been working a lot with Next.js. I&apos;m laid back
+            and easily self motivated. I’m a musician and that is my main
             creative outlet. Also writing, journaling, basketball, and running
             are some of my main hobbies. Coding is my passion and I can’t wait
             to land my first position.
@@ -308,11 +308,11 @@ export default function HomePage() {
             <a
               rel='noopener noreferrer'
               target='_blank'
-              href='https://soundcloud.com/bmansk14-brock'
+              href='https://distrokid.com/hyperfollow/barronbrock/a-wild-goose-chase'
             >
               here
             </a>{" "}
-            to see all of my music. Musicians also make great programmers{" "}
+            to check out my new E.P. Musicians also make great programmers{" "}
             <FontAwesomeIcon icon={faSmileWink} />. If you want to see more of
             my music, articles, or photos simply click{" "}
             <a
@@ -327,39 +327,12 @@ export default function HomePage() {
         </div>
         <div className='col'>
           <iframe
-            width='500px'
-            height='166'
+            width='100%'
+            height='450'
             scrolling='no'
             frameBorder='no'
             allow='autoplay'
-            src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/970580383&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
-          ></iframe>
-
-          <iframe
-            width='500px'
-            height='166'
-            scrolling='no'
-            frameBorder='no'
-            allow='autoplay'
-            src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/967128076&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
-          ></iframe>
-
-          <iframe
-            width='500px'
-            height='166'
-            scrolling='no'
-            frameBorder='no'
-            allow='autoplay'
-            src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/954268564&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
-          ></iframe>
-
-          <iframe
-            width='500px'
-            height='166'
-            scrolling='no'
-            frameBorder='no'
-            allow='autoplay'
-            src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/933091150&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
+            src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1219231234&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
           ></iframe>
         </div>
       </div>
