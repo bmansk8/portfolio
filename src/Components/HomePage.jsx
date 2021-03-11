@@ -1,5 +1,5 @@
 import React from "react";
-import Photo from "../imgs/guitarPhoto.jpg";
+import Photo from "../imgs/coverArt25.jpg";
 import pluralsightLogo from "../imgs/psLogo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "react-bootstrap";
