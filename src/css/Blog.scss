@@ -97,6 +97,7 @@ $p-margn-t-b: 15px;
     }
     .code {
       @include secondary-margin-l;
+      margin-right: 15px;
       width: auto;
     }
   }

@@ -12,6 +12,234 @@ export default function Blog() {
     <pre><code></code></pre> are the way to go for sure.
     */}
 
+      <div id='article 5'>
+        <h1>Revisiting Next.js</h1>
+        <p>
+          So I know in my last article I said I would not continue to use
+          Next.js for any of my projects. I didn’t lie but maybe wasn’t totally
+          honest either. So my personal blog site is built with Next.js. This
+          has led me to continue to use it. Now I have not used it for any new
+          projects but I have become a lot more familiar with it. Some stuff
+          that really has nothing to do with Next and some stuff that does
+          involve Next. So with that let&apos;s get started.
+        </p>
+
+        <p>
+          First off I added a navbar to my site. This is pretty easy if you
+          don’t have anything persistent on the navbar. Simply make a react
+          component with your nav bar in it and then in your _app.js file wrap
+          your default component with the navbar component. And make sure to
+          have your component and papgeprops in your function. Your navbar also
+          needs to import children and display them. Boom now you have a navbar
+          that persists on every page. Next also makes SEO easy. Simply import
+          the head element from next and stick that in your _app.js file. All in
+          all should look something like this.
+        </p>
+
+        <pre className='code'>
+          <code>
+            {`navbar
+
+import { Children } from "react";
+
+export default function Layout({children}) {
+  return (
+    <>
+      <nav className={styles.navbar}>
+      </nav>
+      {children}
+    </>
+  );
+}
+`}
+          </code>
+        </pre>
+
+        <pre className='code'>
+          <code>
+            {`_app.js
+
+import Layout from "../public/utilities/Layout";
+import Head from "next/head";
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <Layout>
+      <Head>
+        <title>Barron Brock's Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <meta charSet="UTF-8" />
+      </Head>
+      <Component {...pageProps} />
+    </Layout>
+  );
+}
+        `}
+          </code>
+        </pre>
+
+        <p>
+          Some helpful links about SEO and a favicon generator{" "}
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://blog.logrocket.com/how-next-js-can-help-improve-seo/'
+          >
+            Article 1,{" "}
+          </a>
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://ahrefs.com/blog/seo-meta-tags/'
+          >
+            {" "}
+            Article 2,{" "}
+          </a>
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://favicon.io/'
+          >
+            {" "}
+            favicon genreator
+          </a>
+        </p>
+
+        <p>
+          One other cool thing I did was added a ruote to look through any
+          archived files I have on the site. Old articles not on the home page
+          and stuff like that. I am yet to add a search function but that will
+          come at some point. What I wanted to do was go look through my file
+          tree, find all the names, get rid of the .jsx and then display them in
+          li tags. I was doing this manually but why not make the computer do
+          it?
+        </p>
+        <p>
+          First things first import fs from node. Then create a get static props
+          function, Then I set up my array of folders to look through and a
+          array for the clean names
+        </p>
+
+        <pre className='code'>
+          <code>
+            {`import fs from "fs";
+
+export async function getStaticProps(){
+  const directories = ["/articles","/photos","/songs"];
+  const cleanNames = [];
+}
+`}
+          </code>
+        </pre>
+
+        <p>
+          Then I ran a for each of the directories and removed the .jsx tag for
+          each filename. Push each one to the cleannames arr and then return it
+        </p>
+
+        <pre className='code'>
+          <code>
+            {`directories.forEach((i) => {
+  let temp = fs.readdirSync("./pages/posts" + i).map((i) => {
+    i = i.replace(regex, "");
+    return i;
+  });
+  cleanNames.push(temp);
+});
+
+return { props: { cleanNames } };
+`}
+          </code>
+        </pre>
+
+        <p>The regex is /\.jsx$/ btw</p>
+
+        <p>
+          It&apos;s important you do this in get static props as only the server
+          side can use Node’s file system. Then in my return of my function I
+          pass in cleanames and render them out. Cleannames gives me an array of
+          arrays. Index one is all the filenames for articles 2 is photos and 3
+          is songs ect… so I map each index of the array like so
+        </p>
+
+        <pre className='code'>
+          <code>
+{`export default function archived({ cleanNames }) {
+  return (
+    <div className="archived">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
+        rel="stylesheet"
+      />
+      <h1>Archived posts</h1>
+      <p>A list of all my posts on the site so far.</p>
+      <ul>
+        <h3>Articles</h3>
+        {cleanNames[0].map((name, i) => {
+          return <A_li route={"/posts/articles/"} name={name} key={i} />;
+        })}
+        <h3>Photos</h3>
+        {cleanNames[1].map((name, i) => {
+          return <A_li route={"/posts/photos/"} name={name} key={i} />;
+        })}
+        <h3>Songs</h3>
+        {cleanNames[2].map((name, i) => {
+          return <A_li route={"/posts/songs/"} name={name} key={i} />;
+        })}
+      </ul>
+      <a href="/">Home Page</a>
+    </div>
+  );
+}
+`}
+          </code>
+        </pre>
+
+        <p>
+          A_li is just a custom component I made for the li tags. It look like
+          this
+        </p>
+
+        <pre className='code'>
+          <code>
+            {`export default function A_li(props) {
+  return (
+    <li>
+      <a href={props.route + props.name}>{props.name} </a>
+    </li>
+  );
+}          
+`}
+          </code>
+        </pre>
+
+        <p>
+          So all in all my archive file looks like{" "}
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://github.com/bmansk8/barron-blog/blob/main/pages/archives.jsx'
+          >
+            this
+          </a>
+          .
+        </p>
+        <p>
+          So while I still think I prefer client side rendering Next.js has
+          really grown on me and I will keep using it for my personal blog site.
+          If you want to see my blog site simply go to{" "}
+          <a
+            rel='noopener noreferrer'
+            target='_blank'
+            href='https://barron-blog.vercel.app'
+          >
+            barron-blog.vercel.app
+          </a>
+          !
+        </p>
+      </div>
+
       <div id='article 4'>
         <h1>Next.js</h1>
         <p>
