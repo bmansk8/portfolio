@@ -242,18 +242,19 @@ export default function HomePage() {
               projects.
             </p>
           </div>
+
           <div className='card'>
-            <h3 className='card-header'>Fullstack JavaScript app</h3>
+            <h3 className='card-header'>Personal Blog Site</h3>
             <div className='card-body'>
               <p>
-                This is a full stack web project using HTML, CSS, JavaScript,
-                nodeJs, ejs, mongoDB, and express. This project has a database,
-                pings a api, and has a login feature. This project also uses
-                asynchronous programming.
+                This is a personal blog site I created using only Next.js and
+                SASS. It displays articles, photos, and my music. It boasts
+                strong SEO, optimization, and shows my knowledge of Next.js and
+                my ability to teach myself a new framework.
               </p>
               <Button
                 target='_blank'
-                href='https://github.com/bmansk8/pluralsight-project'
+                href='https://barron-blog.vercel.app/'
                 variant='outline-primary'
               >
                 Check me out!
@@ -295,6 +296,7 @@ export default function HomePage() {
               </Button>
             </div>
           </div>
+
         </div>
       </div>
 

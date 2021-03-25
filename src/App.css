@@ -35,6 +35,13 @@
     header a{
       color: black;
     }
+    a:not(.btn):hover{
+      text-decoration: none;
+      display: inline-block;
+      transform: scale(1.05);
+      color: #007bff;
+      transition-duration: .3s; 
+    }
   }
 
   @media screen and (max-width: 1060px) {
