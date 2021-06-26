@@ -296,7 +296,6 @@ export default function HomePage() {
               </Button>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -306,38 +305,55 @@ export default function HomePage() {
             <FontAwesomeIcon icon={faMusic} /> Music:
           </h3>
           <p>
-            I am also a musician. Click{" "}
+            I am also a musician. You can check out{" "}
             <a
               rel='noopener noreferrer'
               target='_blank'
               href='https://distrokid.com/hyperfollow/barronbrock/a-wild-goose-chase'
             >
-              here
+              my latest E.P
             </a>{" "}
-            to check out my new E.P. Musicians also make great programmers{" "}
+            . You can find me on{" "}
+            <a href='https://open.spotify.com/artist/1AfWH8mVhG62WMXLcxuUIH'>
+              Spotify
+            </a>
+            ,{" "}
+            <a href='https://music.apple.com/us/artist/barron-brock/1555957187'>
+              Apple music
+            </a>
+            ,{" "}
+            <a href='https://music.amazon.com/artists/B08XPSGR84/barron-brock'>
+              Amazon Music
+            </a>
+            , <a href='https://soundcloud.com/bmansk14-brock'>Soundcloud</a> or
+            my{" "}
+            <a href='https://distrokid.com/hyperfollow/barronbrock/sojourner'>
+              Hyperfollow
+            </a>{" "}
+            for my latest E.P. Musicians also make great programmers{" "}
             <FontAwesomeIcon icon={faSmileWink} />. If you want to see more of
-            my music, articles, or photos simply click{" "}
+            my music, articles, or photos simply go to{" "}
             <a
               rel='noopener noreferrer'
               target='_blank'
               href='https://barron-blog.vercel.app'
             >
-              here
+              my personal blog
             </a>{" "}
-            to go to my personal blog.
           </p>
         </div>
         <div className='col'>
-          <iframe
-            width='100%'
-            height='450'
-            scrolling='no'
-            frameBorder='no'
-            allow='autoplay'
-            src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1219231234&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'
-          ></iframe>
+        <iframe src='https://open.spotify.com/embed/album/62dqxjfMhWCHHPMcxt1EpF' width='400px' height='300' frameBorder='0' allowtransparency='true' allow='encrypted-media'></iframe>
         </div>
       </div>
     </div>
   );
 }
+
+/*
+spotify https://open.spotify.com/artist/1AfWH8mVhG62WMXLcxuUIH
+apple https://music.apple.com/us/artist/barron-brock/1555957187
+amazon https://music.amazon.com/artists/B08XPSGR84/barron-brock
+soundcloud https://soundcloud.com/bmansk14-brock
+hyper follow latest E.P https://distrokid.com/hyperfollow/barronbrock/sojourner
+*/

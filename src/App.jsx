@@ -39,7 +39,7 @@ export default function Home() {
         <div><FontAwesomeIcon icon={faEnvelope} /> bmansk14@gmail.com</div>
         <div><FontAwesomeIcon icon={faPhone} /> 678-704-7626</div>
         <div><FontAwesomeIcon icon={faMapMarkerAlt} /> Atlanta Ga</div>   
-      </header>
+    </header>
 
       <Switch>
         <Route path='/blog'>
