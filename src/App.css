@@ -1,59 +1,63 @@
-  header{
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: larger;
-    padding-top: 5px;
+.App .row {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+header {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: larger;
+  padding-top: 5px;
+}
+
+header div {
+  display: inline-block;
+  padding: 7px;
+}
+
+header a {
+  display: inline-block;
+  text-decoration: none;
+  color: #c0c0c0;
+  padding: 7px;
+}
+
+a:not(.btn):hover {
+  text-decoration: none;
+  display: inline-block;
+  transform: scale(1.05);
+  color: aqua;
+  transition-duration: 0.3s;
+}
+
+footer p {
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+@media (prefers-color-scheme: light) {
+  header a {
+    color: black;
   }
-  
-  header div{
-    display: inline-block;
-    padding: 7px;
-  }
-  
-  header a{
-    display: inline-block;
-    text-decoration: none;
-    color: #C0C0C0;
-    padding: 7px;
-  }
-  
-  a:not(.btn):hover{
+  a:not(.btn):hover {
     text-decoration: none;
     display: inline-block;
     transform: scale(1.05);
-    color: aqua;
-    transition-duration: .3s; 
+    color: #007bff;
+    transition-duration: 0.3s;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  header a {
+    font-size: medium;
   }
 
-  footer p{
-    margin-bottom: 0;
-    padding-bottom: 5px;
-  }
-  
-
-  @media (prefers-color-scheme: light){
-    header a{
-      color: black;
-    }
-    a:not(.btn):hover{
-      text-decoration: none;
-      display: inline-block;
-      transform: scale(1.05);
-      color: #007bff;
-      transition-duration: .3s; 
-    }
+  header div {
+    font-size: medium;
   }
 
-  @media screen and (max-width: 1060px) {
-    header a {
-      font-size: medium;
-    }
-
-    header div{
-      font-size: medium;
-    }
-
-    footer{
-      font-size: small;
-    }
+  footer {
+    font-size: small;
   }
+}

@@ -1,136 +1,130 @@
-#HomePage {
-  #creationsNested{
-    display: none;
-  }
+#creationsNested {
+  display: none;
+}
 
-  #creations{
-    display: block;
-  }
+#creations {
+  display: block;
+}
 
-  #name {
-    margin-top: 100px;
-    padding: 1px;
-  }
+#name {
+  margin-top: 100px;
+  padding: 1px;
+}
 
-  h2{
-    margin-left: 5%;
-  }
+h2 {
+  margin-left: 5%;
+}
 
-  img {
-    aspect-ratio: 1/1;
-    width: 438px;
-  }
+img {
+  aspect-ratio: 1/1;
+  width: 438px;
+}
 
-  .card {
-    color: black;
-    margin: 15px;
-  }
+.card {
+  color: black;
+  margin: 15px;
+}
 
-  .psLogo {
-    width: 33px;
-    height: 30px;
-    margin: 4px;
-  }
+.psLogo {
+  width: 33px;
+  height: 30px;
+  margin: 4px;
+}
 
-  .col {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+.col {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-  .row {
-    padding: 1px;
-    margin: 5%;
-    margin-top: 2%;
-  }
+.row {
+  padding: 1px;
+  margin: 5%;
+  margin-top: 2%;
 }
 
 @media screen and (min-width: 1061px) {
-  #HomePage {
-    #lg_about {
-      display: inline-flexbox;
-    }
-    #sm_about {
-      display: none;
-    }
+  #lg_about {
+    display: inline-flexbox;
+  }
+  #sm_about {
+    display: none;
   }
 }
 
 /*small view v v v */
 @media screen and (max-width: 1060px) {
-  #HomePage {
-    #creationsNested{
-      display: block;
-    }
+  #creationsNested {
+    display: block;
+  }
 
-    #creations{
-      display: none;
-    }
+  #creations {
+    display: none;
+  }
 
-    #lg_about {
-      display: none;
-    }
-    #sm_about {
-      display: block;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
+  #lg_about {
+    display: none;
+  }
+  #sm_about {
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-    #name {
-      font-size: xxx-large;
-    }
+  #name {
+    font-size: xxx-large;
+  }
 
-    #GtrPhoto{
-      margin: auto;    
-      display: block;
-    }
+  #GtrPhoto {
+    margin: auto;
+    display: block;
+  }
 
-    iframe {
-      width: 300px;
-      margin: 5px;
-    }
+  iframe {
+    width: 300px;
+    margin: 5px;
   }
 }
 
 @media screen and (max-width: 570px) {
-  #HomePage {
-    #GtrPhoto {
-      width: 250px;
-      height: 250px;
-    }
+  #GtrPhoto {
+    width: 250px;
+    height: 250px;
+  }
 
-    .col h3 {
-      font-size: large;
-    }
+  .col h3 {
+    font-size: large;
+  }
 
-    .col li {
-      font-size: small;
-    }
+  .col li {
+    font-size: small;
+  }
 
-    .col a {
-      font-size: large;
-    }
+  .col a {
+    font-size: large;
+  }
 
-    .row h2 {
-      font-size: x-large;
-    }
+  .row h2 {
+    font-size: x-large;
+  }
 
-    .col p {
-      font-size: small;
-    }
+  .col p {
+    font-size: small;
+  }
+
+  .col p a {
+    font-size: small;
   }
 }
 
 @media (prefers-color-scheme: light) {
-  #HomePage {
-    .col .card {
-      color: #c0c0c0;
-      border: none;
-    }
-    .card .card-header {
-      background-color: rgba(0, 0, 1, 0.8);
-    }
-    .card-body {
-      background-color: black;
-    }
+  .col .card {
+    color: #c0c0c0;
+    border: none;
+  }
+  .card .card-header {
+    background-color: rgba(0, 0, 1, 0.8);
+  }
+  .card-body {
+    background-color: black;
   }
 }
