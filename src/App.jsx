@@ -40,9 +40,9 @@ export default function Home() {
 
     <Hero />
     <Creations />
+    <Music />
     <Education />
     <Certifications />
-    <Music />
 
       <footer className='text-center'>
         <p>Made by Barron V Brock with create react app, and boostrap 4.</p>
