@@ -1,63 +1,147 @@
-.App .row {
-  margin-right: 5%;
-  margin-left: 5%;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+:root {
+  --accent1: #07e8f8;
+  --accent2: #f81707;
+  font-size: 20px;
 }
 
-header {
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: larger;
-  padding-top: 5px;
-}
-
-header div {
-  display: inline-block;
-  padding: 7px;
-}
-
-header a {
-  display: inline-block;
-  text-decoration: none;
-  color: #c0c0c0;
-  padding: 7px;
-}
-
-a:not(.btn):hover {
-  text-decoration: none;
-  display: inline-block;
-  transform: scale(1.05);
-  color: aqua;
-  transition-duration: 0.3s;
-}
-
-footer p {
-  margin-bottom: 0;
-  padding-bottom: 5px;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #ffffff;
+    --white: #000000;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-  header a {
-    color: black;
-  }
-  a:not(.btn):hover {
-    text-decoration: none;
-    display: inline-block;
-    transform: scale(1.05);
-    color: #007bff;
-    transition-duration: 0.3s;
+  :root {
+    --black: #000000;
+    --white: #ffffff;
   }
 }
 
-@media screen and (max-width: 1060px) {
-  header a {
-    font-size: medium;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--black);
+  background: var(--white);
+}
+
+a {
+  color: var(--accent1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.App > div {
+  margin: 25px 0px;
+  max-width: 80%;
+  border-top: 1px solid var(--black);
+}
+
+h1 {
+  margin: 2rem 0px;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 1.75rem 0px;
+  font-size: 2rem;
+}
+
+h3 {
+  margin: 1.5rem 0px;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 1rem 0px;
+  font-size: 1rem;
+}
+
+.socials ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.socials ul li {
+  padding: 0px 0.5rem;
+}
+
+.header-card img {
+  margin-top: 1.5rem;
+  width: 296px;
+  aspect-ratio: auto;
+}
+
+.card {
+  border: 1px solid var(--black);
+  padding: 1rem;
+}
+
+.splide__arrow {
+  background: var(--black);
+}
+
+.splide__arrow svg {
+  fill: var(--accent1);
+}
+
+.splide__pagination__page.is-active {
+  background: var(--accent1);
+}
+
+.splide__pagination__page {
+  background: var(--black);
+}
+
+.education > ol > li {
+  margin-bottom: 0.5rem;
+}
+
+.education > ol > li > ol > li {
+  max-width: 80%;
+}
+
+.music iframe {
+  width: 700px;
+  height: 300px;
+}
+
+footer {
+  margin: 0px 1rem;
+  display: flex;
+}
+
+footer p {
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    font-size: 16px;
   }
 
-  header div {
-    font-size: medium;
-  }
-
-  footer {
-    font-size: small;
+  .music iframe {
+    width: 296px;
   }
 }
