@@ -47,17 +47,16 @@ function App() {
 
         <h3>Griffin solutions</h3>
         <p>
-          I develop software for online events. Mostly within the rainfocus
-          platform using html css and javascript along with smaller
-          technologies. Started in SEP 2021 and still in this role.
+          I create software! Whether it’s web based with html, css, js, react
+          and more. Or .NET or node.js solutions. I’m always learning and using
+          a variety of technologies including creating a proprietary front end
+          framework to inject code into pre-existing online event technologies.
         </p>
       </div>
 
       <div className="creations">
         <h2>Creations</h2>
-        <p>
-          Some of the stuff I have built.
-        </p>
+        <p>Some of the stuff I have built.</p>
 
         <Splide
           options={{
@@ -162,17 +161,18 @@ function App() {
       <div className="music">
         <h2>My Music</h2>
         <p>
-          I'm also a musician. I play a variety of genres but Alternative is
-          my main one. I'm a multi instrumentalist playing bass, drums, vocals,
-          and my best being guitar. I'm always working on something so feel free
-          to give me a listen and follow!
+          I'm also a musician. I play a variety of genres but Alternative is my
+          main one. I'm a multi instrumentalist playing bass, drums, vocals, and
+          my best being guitar. I'm always working on something so feel free to
+          give me a listen and follow!
         </p>
+
         <iframe
           title="spotify embed"
-          src="https://open.spotify.com/embed/album/62dqxjfMhWCHHPMcxt1EpF"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
+          src="https://open.spotify.com/embed/album/7HJtDGITmP4eTsr6eUKizD?utm_source=generator"
+          frameBorder="0"
+          allowFullScreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         ></iframe>
       </div>
 
