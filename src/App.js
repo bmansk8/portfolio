@@ -39,7 +39,7 @@ function App() {
       </div>
 
       <div className="experince">
-        <h2>Experince</h2>
+        <h2>Experience</h2>
         <p>
           I have over 3 years of experience doing web development whether in the
           professional space or the hobby space.
