@@ -13,9 +13,6 @@ function App() {
           <li>
             <a href="https://github.com/bmansk8">Github</a>
           </li>
-          <li>
-            <a href="https://barron-blog.vercel.app/">Creative Blog</a>
-          </li>
           <li>678-704-7626</li>
           <li>bmansk14@gmail.com</li>
           <li>Dahlonega Ga</li>
@@ -29,28 +26,35 @@ function App() {
         />
         <h1>Barron M V Brock</h1>
         <p>
-          I'm a junior level full stack web developer. I'm most comfortable in
-          React and the AWS cloud. I recently have been working a lot with
-          Next.js. Currently I have been using the rainfocus platform for event
-          focused development. I'm laid back and easily self motivated. I’m a
-          musician and that is my main creative outlet. Also writing,
-          journaling, basketball, and running are some of my main hobbies.
+          I'm a mid level full stack web developer. I'm most comfortable in
+          React and the AWS cloud. I recently have gotten into using babylon.js,
+          three.js, and mozilla hubs to create ar/vr experinces. I'm laid back
+          and easily self motivated. I’m a musician and that is my main creative
+          outlet. Also writing, journaling, and 3d printing are some of my main
+          hobbies.
         </p>
       </div>
 
       <div className="experince">
         <h2>Experience</h2>
+
+        <h3>Eclipse Reality - (current position)</h3>
         <p>
-          I have over 3 years of experience doing web development whether in the
-          professional space or the hobby space.
+          Creating digital human experiences via software and technology. These
+          might be full blown applications, websites, micro services, online
+          events, vr/ar applications, or truly anything. This includes using
+          TypeScript, JavaScript, HTML, CSS, tailwindcss, C#, Azure, and plenty
+          of other frameworks/tools.
         </p>
 
-        <h3>Griffin solutions</h3>
+        <h3>Griffin solutions - (1yr 4mos)</h3>
         <p>
-          I create software! Whether it’s web based with html, css, js, react
-          and more. Or .NET or node.js solutions. I’m always learning and using
-          a variety of technologies including creating a proprietary front end
-          framework to inject code into pre-existing online event technologies.
+          I created software! Whether it was web based with html, css, js, react
+          and more. Or .NET or node.js solutions. This included creating a
+          proprietary front end framework to inject code into pre-existing
+          online event technologies. Also creating dedicated
+          integration/application software develoment as well as maintence for
+          legacy applications in c# and javascript/node.
         </p>
       </div>
 
@@ -105,7 +109,6 @@ function App() {
                 written. It is also a exercise to learn Next.js and static site
                 generation.
               </p>
-              <a href="https://barron-blog.vercel.app/">See it online!</a>
               <br />
               <a href="https://github.com/bmansk8/barron-blog">
                 See it on Github
@@ -160,6 +163,7 @@ function App() {
 
       <div className="music">
         <h2>My Music</h2>
+        <h3>My Solo Stuff</h3>
         <p>
           I'm also a musician. I play a variety of genres but Alternative is my
           main one. I'm a multi instrumentalist playing bass, drums, vocals, and
@@ -173,6 +177,24 @@ function App() {
           frameBorder="0"
           allowFullScreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        ></iframe>
+
+        <h3>Worship Music</h3>
+        <p>
+          I also am a part of the worship team for{" "}
+          <a href="https://riverrockschurch.com/">River Rocks Church</a>. Along
+          with my wife, and everyone in the worship band, we create music that
+          allows people to have a real encounter with God. This is a passion of
+          mine, and I'm always eager to create more music that both honors the
+          Lord, and creates a enviroment for people to ecnounter God.
+        </p>
+
+        <iframe
+          src="https://open.spotify.com/embed/artist/20Iwd9omhOUAYfRckrZv3U?utm_source=generator&theme=0"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
         ></iframe>
       </div>
 
