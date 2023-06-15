@@ -1,4 +1,3 @@
-import "@splidejs/splide/dist/css/splide.min.css";
 import "./App.css";
 import Creations from "./components/creations";
 import Experince from "./components/experince";
