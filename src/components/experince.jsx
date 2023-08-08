@@ -6,15 +6,28 @@ export default function Experince() {
       <h3>Eclipse Reality - (current position)</h3>
       <h4>Title: Software developer II</h4>
       <p>
-        Creating digital human experiences via software and technology. These
-        might be full blown applications, websites, micro services, online
-        events, vr/ar applications, or truly anything. This included creating a
-        mono repo/platform that used multiple db's, multiple authentication
-        services, a custom front end framework, and a custom configuration tool.
-        All built custom and in house. As well as custom digital online events.
-        Completely built and designed to match high fidelity figma and adobe XD
-        design mockups. These utilized custom code injection frameworks that
-        work on top of other frameworks.
+        I have experience in creating digital human experiences using software
+        and technology. This includes full-fledged applications, websites,
+        microservices, online events, and more.
+      </p>
+      <p>
+        I helped create a monorepo/platform that uses multiple databases,
+        multiple authentication services, a custom front-end framework, and a
+        custom configuration tool. All of these were built in-house.
+      </p>
+      <p>
+        I ported over two custom packages for APIs and database management from
+        Node and Express to Python with Flask. I also ported over integrations
+        with authentication, AWS, Langchain, email systems, MongoDB, and
+        middleware. These packages, once ported to Python, were then used in
+        Python APIs that integrated with the existing Node APIs and helped us
+        create applications that utilized AI.
+      </p>
+      <p>
+        I also helped create custom digital online events. These were completely
+        built and designed to match high-fidelity Figma and Adobe XD design
+        mockups. They utilized a custom code injection framework that works on
+        top of other frameworks.
       </p>
 
       <h3>Griffin solutions - (1yr 4mos)</h3>

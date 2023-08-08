@@ -5,6 +5,7 @@ import Education from "./components/education";
 import Music from "./components/music";
 import Socials from "./components/socials";
 import HeaderCard from "./components/header";
+import Technologies from "./components/technologies";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <HeaderCard />
       <Experince />
       <Creations />
-      <Education />
+      <Technologies />
       <Music />
+      <Education />
 
       <footer>
         <p>
