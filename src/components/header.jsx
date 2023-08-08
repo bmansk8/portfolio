@@ -2,7 +2,7 @@ export default function HeaderCard() {
   return (
     <div className="header-card">
       <img
-        src="https://barron-blog-photo.s3.amazonaws.com/EP/coverArt25.jpg"
+        src="https://barron-portfolio.s3.amazonaws.com/cover+art+25.jpg"
         alt="Barron"
       />
       <h1>Barron M V Brock</h1>
